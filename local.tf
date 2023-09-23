@@ -1,0 +1,3 @@
+resource "sample" {
+    value = "welcome"
+}
