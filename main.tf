@@ -3,7 +3,8 @@ resource "local_file" "mypet" {
     content =  "I love pets"
 }
 
-resource "local_file" "mycat" {
-    filename = "/root/terraform_basics/cat.txt"
-    content = "mypet cat"
-}
+resource "random_pet" "mynewpet" {
+  length    = "3"
+  prefix    = "Mr"
+  separator = ","
+  }
