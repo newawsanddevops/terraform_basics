@@ -1,4 +1,4 @@
-resource "local_file" "mypets" {
+resource "local_file" "mypet" {
     filename = "/root/terraform_basics/file.txt"
     content =  "I love pets"
 }
