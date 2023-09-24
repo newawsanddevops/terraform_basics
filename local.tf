@@ -1,3 +1,3 @@
 resource "sample" {
-    value = "welcome"
+    value = "welcome to the session"
 }
