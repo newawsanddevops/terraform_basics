@@ -8,3 +8,7 @@ resource "random_pet" "mynewpet" {
   prefix    = "Mr"
   separator = ","
   }
+
+  resource "random_id" "id" {
+    byte_length = "4"
+ }
