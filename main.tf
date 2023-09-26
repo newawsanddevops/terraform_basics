@@ -1,3 +1,5 @@
+
+
 resource "aws_iam_user" "adminuser" {
   name = "Indian"
   tags = {
