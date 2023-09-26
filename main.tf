@@ -1,6 +1,6 @@
 resource "aws_iam_user" "adminuser" {
   user = "Indian"
-  tag = {
+  tags = {
     description = "I am an Indian"
   }
 
