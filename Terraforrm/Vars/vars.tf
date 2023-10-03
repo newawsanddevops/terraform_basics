@@ -1,6 +1,3 @@
-variable "sample" {}
-
-variable "sample1" {
-
-    
+variable "sample" {
+    default = "Welcome to terraform basics"
 }
