@@ -8,6 +8,6 @@ output "city_name" {
 
 variable "state" {}
 
-variable "state_name" {
+output "state_name" {
     value = "My state name is ${var.state}"
 }
