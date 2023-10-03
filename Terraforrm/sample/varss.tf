@@ -3,5 +3,5 @@ variable "city"{
 }
 
 output "city_name" {
-    value = "My City name is ${city}"
+    value = "My City name is ${var.city}"
 }
