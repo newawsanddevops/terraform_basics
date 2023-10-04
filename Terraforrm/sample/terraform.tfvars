@@ -1,2 +1,1 @@
 city = "Hyd"
-state = "Telangana"
