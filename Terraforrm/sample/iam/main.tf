@@ -13,7 +13,7 @@ resource "aws_iam_user" "admin" {
 
 resource "aws_iam_user" "adminuser"{
     name = "unravel"
-    policy = <<EOF
+    policy_arn = <<EOF
     {
     "Version": "2012-10-17",
     "Statement": [
