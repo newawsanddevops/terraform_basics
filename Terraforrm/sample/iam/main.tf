@@ -11,21 +11,8 @@ resource "aws_iam_user" "admin" {
    }
 }
 
-resource "aws_iam_policy" "adminuser" {
-    name = "Adminusers"
-    policy = <<EOF
-    {
-        "Version": "2012-10-17",
-        "Statement": [
-        {
-            "Effect": "Allow",
-            "Action": "*",
-            "Resource": "*"
-        }
-    ]
-    
-}
-  EOF
+resource "aws_iam_user" "adminuser"{
+    name = "unravel"
 }
 
 resource "aws_iam_user_policy_attachment" "unravel-admin-access" {
