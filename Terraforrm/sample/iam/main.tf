@@ -13,7 +13,7 @@ resource "aws_iam_user" "admin" {
 
 resource "aws_iam_policy" "adminpolicy" {
     name = "Adminpolicy"
-    policy = <<EOF
+    policy = << EOF
      {
     "Version": "2012-10-17",
     "Statement": [
