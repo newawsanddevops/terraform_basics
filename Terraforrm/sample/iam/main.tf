@@ -23,8 +23,8 @@ resource "aws_iam_user" "adminuser"{
             "Resource": "*"
         }
     ]
-}
-   EOF
+    }
+ EOF
 }
 
 resource "aws_iam_user_policy_attachment" "unravel-admin-access" {
