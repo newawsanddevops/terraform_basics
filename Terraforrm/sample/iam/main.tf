@@ -10,24 +10,3 @@ resource "aws_iam_user" "admin" {
     Description = "This is unravel"
    }
 }
-
-resource "aws_iam_user" "adminuser"{
-    name = "unravel"
-    policy_arn = <<EOF
-    {
-    "Version": "2012-10-17",
-    "Statement": [
-        {
-            "Effect": "Allow",
-            "Action": "*",
-            "Resource": "*"
-        }
-    ]
-    }
- EOF
-}
-
-resource "aws_iam_user_policy_attachment" "unravel-admin-access" {
-    user = aws_iam_user.admin.name
-    policy_arn = aws_iam_policy.adminuser.arn
-}
