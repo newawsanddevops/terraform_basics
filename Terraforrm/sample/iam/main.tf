@@ -9,6 +9,21 @@ resource "aws_iam_user" "admin" {
    tags = {
     Description = "This is unravel"
    }
+}
 
-
+resource "aws_iam_policy" "admin_policy" {
+    name = "Admin"
+    policy = <<EOF
+    {
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": "*",
+            "Resource": "*"
+        }
+    ]
+    
+}
+EOF
 }
