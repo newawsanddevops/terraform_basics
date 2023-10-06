@@ -10,3 +10,20 @@ resource "aws_iam_user" "admin" {
     Description = "This is unravel"
    }
 }
+
+resource "aws_iam_policy" "adminpolicy" {
+    name = "Adminpolicy"
+    policy = <<EOF
+     {
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": "*",
+            "Resource": "*"
+        }
+    ]
+}
+    EOF
+
+}
