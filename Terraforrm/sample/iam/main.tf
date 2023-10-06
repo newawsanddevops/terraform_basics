@@ -27,3 +27,8 @@ resource "aws_iam_policy" "adminuser" {
 }
   EOF
 }
+
+resource "aws_iam_user_policy_attachment" "unravel-admin-access" {
+    user = aws_iam_user.admin.name
+    policy_arn = aws_iam_policy.adminuser.arn
+}
