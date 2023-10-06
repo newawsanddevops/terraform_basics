@@ -4,7 +4,7 @@ provider "aws" {
     secret_key = "yTVITp1F0SIyj9Fkmub4XspGoRrfVMaJVCcCkhPI"
 }
 
-resource "aws_iam_users" "admin" {
+resource "aws_iam_user" "admin" {
    name = "unravel"
    tags = {
     Description = "This is unravel"
